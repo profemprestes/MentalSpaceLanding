@@ -15,5 +15,7 @@ export default {
 			"error": "#ff8783",
 		},
 	},
-	plugins: [],
+	plugins: [
+		require('tailwindcss-animate'),
+	],
 }

@@ -1,0 +1,57 @@
+/* Animaciones y estilos para el footer */
+.footer-animate {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.footer-link {
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.footer-link:hover {
+    transform: translateX(5px);
+}
+
+.footer-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(71, 11, 11);
+    transition: width 0.3s ease;
+}
+
+.footer-link:hover::after {
+    width: 100%;
+}
+
+.subscribe-btn {
+    transition: all 0.3s ease;
+    transform-style: preserve-3d;
+}
+
+.subscribe-btn:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.logo-hover {
+    transition: transform 0.5s ease;
+}
+
+.logo-hover:hover {
+    transform: rotate(5deg) scale(1.05);
+}
